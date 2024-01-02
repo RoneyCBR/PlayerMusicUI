@@ -1,0 +1,171 @@
+.main{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: rgb(4,54,74);
+  background: linear-gradient(0deg,rgba(100,204,197,1) 10%,  #176B87 50%);
+  overflow: auto;
+}
+
+.section{
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-standard);
+}
+
+.contentForm{
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.cardLogin{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--gap-standard);
+  gap: var(--gap-standard);
+  width: 90%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  box-shadow: 0px 9px 22px -1px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 9px 22px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 9px 22px -1px rgba(0,0,0,0.75);
+}
+
+.options{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap-standard);
+}
+
+.option{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.options> .active{
+  border-bottom: 2px solid #000;
+}
+
+.form,.formControl{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-standard);
+}
+
+.bottomForm{
+  width: 100%;
+  height: 1em;
+}
+
+.formControl{
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  outline: 1.5px solid  #ccc;
+  padding: 0.5em;
+}
+
+.itemInput{
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0.3em;
+}
+
+.itemInput:focus{
+  outline: none;
+}
+
+.formControl:focus-within {
+  box-shadow: 0px 9px 22px -1px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 9px 22px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 9px 22px -1px rgba(0,0,0,0.75);
+  transform: scale(1.01);
+}
+
+.boxButton {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  left: 0px;
+  bottom: -2em;
+}
+
+.buttonLogin{
+  width: 75px;
+  height: 70px;
+  border-radius: 50% 50%;
+  border: none !important;
+  background-color: #fff !important;
+  color: #000;
+  box-shadow: none !important
+}
+
+.buttonLogin::after {
+  content: '';
+  position: absolute;
+  width: 75px;
+  height: 70px;
+  left: 0%; 
+  bottom: 0%; 
+  box-shadow: 0 14px 16px -8px rgba(0, 0, 0, 0.5); 
+  border-radius: 50%;
+}
+
+.linesDivider {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-standard);
+  padding: 0px 5%;
+  color: white
+}
+
+.contentSocial{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-standard);
+}
+
+.socialButton{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-standard);
+}
+
+.googleButton {
+  /* background: linear-gradient(to right, #4285F4, #DB4437, #F4B400, #0F9D58); */
+  color: white;
+}
+
+.discordButton {
+  /* background: linear-gradient(to right, #5865F2, #7289DA); */
+  color: white;
+}
